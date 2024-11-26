@@ -1,0 +1,60 @@
+:root {
+  --white: #f0f0f0;
+  --sky-white: #b2b2f2;
+  --light-gray: #cccccc;
+  --light-gray-2: #a7a7a7;
+
+  --black: #0b0b0b;
+  --black-2: #1b1b1b;
+  --dark-gray: #222222;
+  --dark-gray-2: #282828;
+
+  --obsidian-black: #0b1215;
+
+  --aqua-blue: #00b7bd;
+  --indigo-blue: #2c3e50;
+  --transparent-blue: #00b7bd22;
+  --transparent-blue-2: #00b7ff99;
+
+  /* Text colors */
+  --text-black-1: var(--black);
+  --text-black-2: var(--black-2);
+  --text-white-1: var(--light-gray);
+  --text-white-2: var(--light-gray-2);
+}
+
+/* semantic color variables for this project */
+:root {
+  --background-color: var(--sky-white);
+  --text-color: var(--text-black-1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--obsidian-black);
+    --text-color: var(--text-white-1);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--text-color);
+  background: var(--background-color);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
